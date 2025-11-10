@@ -269,7 +269,6 @@ export default function App() {
               >
                 <Tab icon={<EqualizerIcon />} label="Noise Generator" />
                 <Tab icon={<SNRIcon />} label="SNR Simulator" />
-                <Tab icon={<SuppressIcon />} label="Noise Suppression" />
               </Tabs>
               <Box sx={{ px: { xs: 0, md: 2 }, flex: 1, overflow: "auto" }}>
                 <ToolTabPanel value={tab} index={0}>
@@ -277,9 +276,6 @@ export default function App() {
                 </ToolTabPanel>
                 <ToolTabPanel value={tab} index={1}>
                   <SNRSimulator />
-                </ToolTabPanel>
-                <ToolTabPanel value={tab} index={2}>
-                  <NoiseSuppression />
                 </ToolTabPanel>
               </Box>
             </Paper>
